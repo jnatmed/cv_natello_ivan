@@ -30,140 +30,95 @@
   </style>
 </head>
 
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans leading-relaxed">
+<body class="bg-gray-100 text-gray-900 font-sans leading-relaxed">
 
-  <!-- Contenedor principal -->
-  <main class="max-w-4xl mx-auto my-10 p-8 bg-white dark:bg-gray-800 shadow-lg rounded-2xl card fade-in">
-    
-    <!-- Header -->
-    <header class="text-center border-b border-gray-300 dark:border-gray-600 pb-5 mb-6">
-      <h1 class="text-4xl font-bold text-emerald-700 dark:text-emerald-400">Iván Darío Natello</h1>
-      <p class="text-gray-600 dark:text-gray-300 mt-1">
-        Ingeniero Agrónomo | Auditor Interno ISO 9001 | Ciencia de Datos
-      </p>
-      <div class="mt-3 text-sm space-y-1">
-        <p>📍 Merlo / Pergamino (Bs. As.)</p>
-        <p>📞 11-6875-7715 | ✉️ 
-          <a href="mailto:ivannatello@live.com.ar" class="hover:underline">ivannatello@live.com.ar</a> | 
-          <a href="mailto:ivan.natello@gmail.com" class="hover:underline">ivan.natello@gmail.com</a>
-        </p>
-        <p>🔗 
-          <a href="https://www.linkedin.com/in/ivan-natello-784598234/" target="_blank" class="hover:underline">
-            linkedin.com/in/ivan-natello
-          </a>
-        </p>
+  <!-- 🔹 Navbar -->
+  <nav class="bg-emerald-700 text-white sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto flex justify-between items-center px-4 py-3">
+      <span class="font-bold text-lg">Iván D. Natello</span>
+      <div class="space-x-4">
+        <button class="nav-btn hover:text-emerald-200" data-section="perfil">Perfil</button>
+        <button class="nav-btn hover:text-emerald-200" data-section="objetivo">Objetivo</button>
+        <button class="nav-btn hover:text-emerald-200" data-section="formacion">Formación</button>
+        <button class="nav-btn hover:text-emerald-200" data-section="experiencia">Experiencia</button>
+        <button class="nav-btn hover:text-emerald-200" data-section="competencias">Competencias</button>
+        <button class="nav-btn hover:text-emerald-200" data-section="publicaciones">Publicaciones</button>
       </div>
-    </header>
+    </div>
+  </nav>
 
-    <!-- Secciones -->
-    <section class="mb-6 fade-in">
-      <h2 class="text-2xl font-semibold text-emerald-600 dark:text-emerald-300 mb-2">Perfil Profesional</h2>
-      <p>
-        Ingeniero Agrónomo con sólida experiencia en inspección técnica, control de calidad y asesoramiento agroindustrial.
-        Complementa su perfil con formación en SIG, Ciencia de Datos y certificación IRAM ISO 9001:2015.
-        Especializado en tecnologías para trazabilidad, eficiencia operativa y análisis productivo.
-      </p>
+  <!-- 🔹 Contenedor -->
+  <main class="max-w-4xl mx-auto my-8 p-6 bg-white rounded-xl shadow-md">
+
+    <!-- Sección: Perfil -->
+    <section id="perfil" class="cv-section">
+      <h2 class="text-2xl font-semibold text-emerald-700 mb-2">Perfil Profesional</h2>
+      <p>Ingeniero Agrónomo con sólida experiencia en inspección técnica, control de calidad y asesoramiento agroindustrial...</p>
     </section>
 
-    <section class="mb-6 fade-in">
-      <h2 class="text-2xl font-semibold text-emerald-600 dark:text-emerald-300 mb-2">Objetivo Profesional</h2>
-      <p>
-        Reorientar la carrera hacia roles con base territorial vinculados a auditoría técnica, gestión de calidad y tecnología aplicada al agro:
-        análisis de datos, gestión geoespacial y trazabilidad productiva.
-      </p>
+    <!-- Sección: Objetivo -->
+    <section id="objetivo" class="cv-section hidden">
+      <h2 class="text-2xl font-semibold text-emerald-700 mb-2">Objetivo Profesional</h2>
+      <p>Reorientar la carrera hacia roles con base territorial vinculados a auditoría técnica, gestión de calidad y tecnología aplicada al agro...</p>
     </section>
 
-    <section class="mb-6 fade-in">
-      <h2 class="text-2xl font-semibold text-emerald-600 dark:text-emerald-300 mb-2">Formación Académica</h2>
+    <!-- Sección: Formación -->
+    <section id="formacion" class="cv-section hidden">
+      <h2 class="text-2xl font-semibold text-emerald-700 mb-2">Formación Académica</h2>
       <ul class="list-disc list-inside space-y-1">
         <li>Maestría en Ciencia de Datos – UBA (en curso)</li>
         <li>Perito Auxiliar de la Justicia CPIA (2025)</li>
-        <li>Diplomatura en Ciencia de Datos – Universidad Austral (2024)</li>
+        <li>Diplomatura en Ciencia de Datos – Univ. Austral (2024)</li>
         <li>Auditor Interno ISO 9001:2015 – IRAM (2024)</li>
-        <li>Programa de Fuerza de Ventas en Agroinsumos – Universidad Austral (2022)</li>
-        <li>Especialista en SIG y Teledetección – FAUBA (2022)</li>
-        <li>Ingeniero Agrónomo – UNLu (2009–2017)</li>
       </ul>
     </section>
 
-    <section class="mb-6 fade-in">
-      <h2 class="text-2xl font-semibold text-emerald-600 dark:text-emerald-300 mb-2">Experiencia Relevante</h2>
-
-      <div class="space-y-4">
-        <article>
-          <h3 class="font-bold">INASE – Instituto Nacional de Semillas (2024 – Actual)</h3>
-          <ul class="list-disc list-inside text-sm">
-            <li>Inspección de lotes y fiscalización bajo normas AOSCA y OCDE.</li>
-            <li>Elaboración de informes técnicos y control documental.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3 class="font-bold">Técnico en Producción de Semillas (2023 – 2024)</h3>
-          <ul class="list-disc list-inside text-sm">
-            <li>Gestión integral de procesos semilleros y control de calidad.</li>
-            <li>Supervisión de logística y documentación comercial.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3 class="font-bold">Asesor Técnico Comercial (2022 – 2023)</h3>
-          <ul class="list-disc list-inside text-sm">
-            <li>Venta de agroinsumos, seguimiento técnico y posventa.</li>
-            <li>Gestión de cartera y CRM.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3 class="font-bold">Ente Cooperador Penitenciario (SPF) – Asesor Técnico Agropecuario (2021 – 2022)</h3>
-          <ul class="list-disc list-inside text-sm">
-            <li>Evaluación de proyectos productivos y asesoramiento técnico.</li>
-            <li>Participación en procesos de licitación y planificación agrícola.</li>
-          </ul>
-        </article>
-      </div>
+    <!-- Sección: Experiencia -->
+    <section id="experiencia" class="cv-section hidden">
+      <h2 class="text-2xl font-semibold text-emerald-700 mb-2">Experiencia Relevante</h2>
+      <p>INASE – Instituto Nacional de Semillas (2024 – Actual): inspección, control de lotes y fiscalización bajo normas AOSCA y OCDE.</p>
     </section>
 
-    <section class="mb-6 fade-in">
-      <h2 class="text-2xl font-semibold text-emerald-600 dark:text-emerald-300 mb-2">Competencias Clave</h2>
+    <!-- Sección: Competencias -->
+    <section id="competencias" class="cv-section hidden">
+      <h2 class="text-2xl font-semibold text-emerald-700 mb-2">Competencias Clave</h2>
       <ul class="list-disc list-inside space-y-1">
         <li>Certificación IRAM ISO 9001:2015 – Auditor Interno</li>
-        <li>Gestión documental y trazabilidad de procesos</li>
+        <li>Gestión documental y trazabilidad</li>
         <li>Dominio de QGIS, Python y Google Earth Engine</li>
-        <li>Inglés avanzado – oral y escrito</li>
       </ul>
     </section>
 
-    <section class="fade-in">
-      <h2 class="text-2xl font-semibold text-emerald-600 dark:text-emerald-300 mb-2">Trabajos Publicados</h2>
+    <!-- Sección: Publicaciones -->
+    <section id="publicaciones" class="cv-section hidden">
+      <h2 class="text-2xl font-semibold text-emerald-700 mb-2">Trabajos Publicados</h2>
       <ul class="list-disc list-inside text-sm">
-        <li>
-          <em>Evaluación de insecticidas sistémicos para el control de Thaumastocoris peregrinus...</em>  
-          XV Jornadas Fitosanitarias Argentinas, Santa Fe (2015).
-        </li>
-        <li>
-          <em>Evaluación de insecticidas sistémicos para el control de dos especies plagas del eucalipto...</em>  
-          III Jornadas Argentinas de Sanidad Forestal, UNLu (2017).
-        </li>
+        <li><em>Evaluación de insecticidas sistémicos...</em> XV Jornadas Fitosanitarias Argentinas, Santa Fe (2015).</li>
+        <li><em>Evaluación de insecticidas sistémicos para el control de dos especies...</em> UNLu (2017).</li>
       </ul>
     </section>
-
   </main>
 
-  <footer class="text-center text-xs text-gray-500 dark:text-gray-400 py-6">
-    © 2025 Iván Darío Natello — Desarrollado con ❤️ y TailwindCSS · <a href="https://github.com/" class="hover:underline">GitHub</a>
+  <footer class="text-center text-xs text-gray-500 py-4">
+    © 2025 Iván Darío Natello — Desarrollado con ❤️ y TailwindCSS
   </footer>
 
+  <!-- Script para manejar navegación -->
   <script>
-    // Animación al hacer scroll
-    const items = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('animate-fadeIn');
+    const buttons = document.querySelectorAll('.nav-btn');
+    const sections = document.querySelectorAll('.cv-section');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-section');
+        sections.forEach(sec => {
+          sec.classList.add('hidden');
+          if (sec.id === target) sec.classList.remove('hidden');
+        });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
-    items.forEach(item => observer.observe(item));
   </script>
-
 </body>
+
 </html>
